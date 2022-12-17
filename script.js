@@ -1,5 +1,5 @@
-function getNumberWithCommas(number) {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+function numberWithSpaces(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 }
 
 function onChangeValue() {
@@ -29,9 +29,13 @@ function metriToUnita(metri) {
     if(metri < 1000) {
         return Math.round(metri*100)/100 + " m"
     }
-    if(metri > 1000) {
-        return Math.round(metri/1000) + " km"
+    if(metri > 100000) {
+        return numberWithSpaces(Math.round(metri/1000)) + " km"
     }
+    if(metri > 1000) {
+        return Math.round(metri/1000*100)/100 + " km"
+    }
+    
 }
 
 function calculate(diametroTerraNuovo) {
@@ -69,7 +73,7 @@ function calculate(diametroTerraNuovo) {
     const diametro_nettuno = getDettagliCorpo(dimensioni_corpi_celesti,'nettuno').diametro / divisore
     const diametro_plutone = getDettagliCorpo(dimensioni_corpi_celesti,'plutone').diametro / divisore
     const diametro_eris = getDettagliCorpo(dimensioni_corpi_celesti,'eris').diametro / divisore
-    const diametro_eliosfera = getDettagliCorpo(dimensioni_corpi_celesti,'eliosfera').diametro / divisore
+    const diametro_proxima_centauri = getDettagliCorpo(dimensioni_corpi_celesti,'proxima_centauri').diametro / divisore
 
     const html_diametro_sole = (document.getElementById('diametro_sole')).innerHTML = metriToUnita(diametro_sole)
     const html_diametro_mercurio = (document.getElementById('diametro_mercurio')).innerHTML = metriToUnita(diametro_mercurio)
@@ -83,7 +87,7 @@ function calculate(diametroTerraNuovo) {
     const html_diametro_nettuno = (document.getElementById('diametro_nettuno')).innerHTML = metriToUnita(diametro_nettuno)
     const html_diametro_plutone = (document.getElementById('diametro_plutone')).innerHTML = metriToUnita(diametro_plutone)
     const html_diametro_eris = (document.getElementById('diametro_eris')).innerHTML = metriToUnita(diametro_eris)
-    const html_diametro_eliosfera = (document.getElementById('diametro_eliosfera')).innerHTML = metriToUnita(diametro_eliosfera)
+    const html_diametro_proxima_centauri = (document.getElementById('diametro_proxima_centauri')).innerHTML = metriToUnita(diametro_proxima_centauri)
 
 
     // CALCOLO DISTANZE
