@@ -30,7 +30,7 @@ function metriToUnita(metri) {
         return Math.round(metri*100)/100 + " m"
     }
     if(metri > 1000) {
-        return Math.round(metri/1000*100)/100 + " km"
+        return Math.round(metri/1000) + " km"
     }
 }
 
