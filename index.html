@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Distanze Spaziali</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1> </h1>
+    <h3></h3>
+    <header>
+        <div class="titolo">
+            <h1 class="titolo-leggero">Distanze <span class="titolo-nero">Spaziali</span></h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Le distanze</h2>
+            <p class="spiegazione">Facciamo fatica a capire le distanze spaziali con numeri troppo grandi. Ho provato a
+                dare una visione più semplice rimpicciolendo la terra a dimensioni con cui abbiamo dimestichezza nella
+                vita reale. </p>
+            <label for="input_diametro_terra_nuovo">Scegli dimensione della terra</label>
+            <select name="input_diametro_terra_nuovo" id="input_diametro_terra_nuovo" onchange="onChangeValue()">
+                <option value="0.001">1 millimetro</option>
+                <option value="0.01">1 centimetro</option>
+                <option value="0.1">10 centimetri</option>
+                <option value="1">1 metro</option>
+                <option value="1000">1 chilometro</option>
+            </select>
+
+            <table>
+                <tr>
+                    <th>Corpo celeste</th>
+                    <th>Diametro</th>
+                    <th>Distanza dal Sole</th>
+                </tr>
+                <tr>
+                    <td>Sole</td>
+                    <td><span id="diametro_sole"></span></td>
+                    <td><span id="distanza_sole"></span></td>
+                </tr>
+                <tr>
+                    <td>Venere</td>
+                    <td><span id="diametro_venere"></span></td>
+                    <td><span id="distanza_venere"></span></td>
+                </tr>
+                <tr>
+                    <td>Terra</td>
+                    <td><span id="diametro_terra"></span></td>
+                    <td><span id="distanza_terra"></span></td>
+                </tr>
+                <tr>
+                    <td>Luna</td>
+                    <td><span id="diametro_luna"></span></td>
+                    <td><span id="distanza_luna"></span></td>
+                </tr>
+                <tr>
+                    <td>Marte</td>
+                    <td><span id="diametro_marte"></span></td>
+                    <td><span id="distanza_marte"></span></td>
+                </tr>
+                <tr>
+                    <td>Giove</td>
+                    <td><span id="diametro_giove"></span></td>
+                    <td><span id="distanza_giove"></span></td>
+                </tr>
+                <tr>
+                    <td>Saturno</td>
+                    <td><span id="diametro_saturno"></span></td>
+                    <td><span id="distanza_saturno"></span></td>
+                </tr>
+                <tr>
+                    <td>Urano</td>
+                    <td><span id="diametro_urano"></span></td>
+                    <td><span id="distanza_urano"></span></td>
+                </tr>
+                <tr>
+                    <td>Nettuno</td>
+                    <td><span id="diametro_nettuno"></span></td>
+                    <td><span id="distanza_nettuno"></span></td>
+                </tr>
+                <tr>
+                    <td>Plutone</td>
+                    <td><span id="diametro_plutone"></span></td>
+                    <td><span id="distanza_plutone"></span></td>
+                </tr>
+                <tr>
+                    <td>Eris</td>
+                    <td><span id="diametro_eris"></span></td>
+                    <td><span id="distanza_eris"></span></td>
+                </tr>
+                <tr>
+                    <td>Eliosfera</td>
+                    <td><span id="diametro_eliosfera"></span></td>
+                    <td><span id="distanza_eliosfera"></span></td>
+                </tr>
+                <tr>
+                    <td>Proxima Centauri</td>
+                    <td><span id="diametro_proxima_centauri"></span></td>
+                    <td><span id="distanza_proxima_centauri"></span></td>
+                </tr>
+            </table>
+
+            <!--             
+            <div class="risultati">
+                <div class="risultati-unita">
+                    <div>
+                        <p>1 ora</p>
+                        <p><span class="text-small">vicino al buco nero</span></p>
+                    </div>
+                </div>
+                <div class="risultati-tempo">
+                    <div class="risultati-tempo-blocco">
+                        <p><span id="anni" class="grassetto"></span> anni</p> 
+                        <p><span id="giorni" class="grassetto"></span> giorni</p>
+                        <p><span id="ore" class="grassetto"></span> ore</p>
+                        <p><span id="minuti" class="grassetto"></span> minuti</p>
+                        <p><span id="secondi" class="grassetto"></span> secondi</p>    
+                    </div>                    
+                </div>
+            </div>
+            -->
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <p class="contatti">info🐌supercat.dev</p>
+            <p class="copyright">2022 © Emilie Rollandin</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
