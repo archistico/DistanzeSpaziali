@@ -26,6 +26,15 @@ function numberWithSpaces(x) {
 }
 
 function metriToUnita(metri) {
+    if (metri < 0.000000001) {
+        return Math.round(metri * 1000000000000 * 100) / 100 + " pm"
+    }
+    if (metri < 0.000001) {
+        return Math.round(metri * 1000000000 * 100) / 100 + " nm"
+    }
+    if (metri < 0.001) {
+        return Math.round(metri * 1000000 * 100) / 100 + " μm"
+    }
     if (metri < 0.01) {
         return Math.round(metri * 1000 * 100) / 100 + " mm"
     }
