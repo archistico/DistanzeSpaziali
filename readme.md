@@ -10,10 +10,10 @@ Una piccola web app che aiuta a capire quanto sono immense le distanze nello spa
 
 <!-- Sostituisci questi due placeholder con degli screenshot reali del sito, salvati in una cartella `screenshots/` nella root del progetto. -->
 
-![Tabella dei risultati](screenshots/screenshot-distanze-spaziali.png)
+![Tabella dei risultati](screenshot-distanze-spaziali.png)
 *La tabella con diametri, distanze dal Sole e tempo che la luce impiega davvero a percorrerle.*
 
-![Confronto dimensioni](screenshots/screenshot-dimensioni-pianeti.png)
+![Confronto dimensioni](screenshot-dimensioni-pianeti.png)
 *Il confronto visivo tra i diametri reali dei corpi celesti, dal Sole a Proxima Centauri.*
 
 ## Come funziona
