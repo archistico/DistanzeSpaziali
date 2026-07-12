@@ -20,6 +20,7 @@
             <p class="spiegazione">Facciamo fatica a capire le distanze spaziali con numeri troppo grandi. Ho provato a
                 dare una visione più semplice rimpicciolendo la terra a dimensioni con cui abbiamo dimestichezza nella
                 vita reale. </p>
+
             <label for="input_diametro_terra_nuovo">Scegli dimensione della terra</label>
             <select name="input_diametro_terra_nuovo" id="input_diametro_terra_nuovo" onchange="onChangeValue()">
                 <option value="0.001">1 millimetro</option>
@@ -37,98 +38,98 @@
                     <th>Corpo celeste</th>
                     <th>Diametro</th>
                     <th>Distanza dal Sole</th>
+                    <th>Tempo luce<br><span class="text-small">nella realtà</span></th>
                 </tr>
                 <tr>
                     <td>Sole</td>
                     <td><span id="diametro_sole"></span></td>
+                    <td>-</td>
                     <td>-</td>
                 </tr>
                 <tr>
                     <td>Mercurio</td>
                     <td><span id="diametro_mercurio"></span></td>
                     <td><span id="distanza_mercurio"></span></td>
+                    <td><span id="tempo_luce_mercurio"></span></td>
                 </tr>
                 <tr>
                     <td>Venere</td>
                     <td><span id="diametro_venere"></span></td>
                     <td><span id="distanza_venere"></span></td>
+                    <td><span id="tempo_luce_venere"></span></td>
                 </tr>
                 <tr>
                     <td>Terra</td>
                     <td><span id="diametro_terra"></span></td>
                     <td><span id="distanza_terra"></span></td>
+                    <td><span id="tempo_luce_terra"></span></td>
                 </tr>
                 <tr>
                     <td>Luna</td>
                     <td><span id="diametro_luna"></span></td>
                     <td><span id="distanza_luna"></span></td>
+                    <td><span id="tempo_luce_luna"></span></td>
                 </tr>
                 <tr>
                     <td>Marte</td>
                     <td><span id="diametro_marte"></span></td>
                     <td><span id="distanza_marte"></span></td>
+                    <td><span id="tempo_luce_marte"></span></td>
                 </tr>
                 <tr>
                     <td>Giove</td>
                     <td><span id="diametro_giove"></span></td>
                     <td><span id="distanza_giove"></span></td>
+                    <td><span id="tempo_luce_giove"></span></td>
                 </tr>
                 <tr>
                     <td>Saturno</td>
                     <td><span id="diametro_saturno"></span></td>
                     <td><span id="distanza_saturno"></span></td>
+                    <td><span id="tempo_luce_saturno"></span></td>
                 </tr>
                 <tr>
                     <td>Urano</td>
                     <td><span id="diametro_urano"></span></td>
                     <td><span id="distanza_urano"></span></td>
+                    <td><span id="tempo_luce_urano"></span></td>
                 </tr>
                 <tr>
                     <td>Nettuno</td>
                     <td><span id="diametro_nettuno"></span></td>
                     <td><span id="distanza_nettuno"></span></td>
+                    <td><span id="tempo_luce_nettuno"></span></td>
                 </tr>
                 <tr>
                     <td>Plutone</td>
                     <td><span id="diametro_plutone"></span></td>
                     <td><span id="distanza_plutone"></span></td>
+                    <td><span id="tempo_luce_plutone"></span></td>
                 </tr>
                 <tr>
                     <td>Eris</td>
                     <td><span id="diametro_eris"></span></td>
                     <td><span id="distanza_eris"></span></td>
+                    <td><span id="tempo_luce_eris"></span></td>
                 </tr>
                 <tr>
                     <td>Eliosfera</td>
                     <td>-</td>
                     <td><span id="distanza_eliosfera"></span></td>
+                    <td><span id="tempo_luce_eliosfera"></span></td>
                 </tr>
                 <tr>
                     <td>Proxima Centauri</td>
                     <td><span id="diametro_proxima_centauri"></span></td>
                     <td><span id="distanza_proxima_centauri"></span></td>
+                    <td><span id="tempo_luce_proxima_centauri"></span></td>
                 </tr>
             </table>
 
-            <!--             
-            <div class="risultati">
-                <div class="risultati-unita">
-                    <div>
-                        <p>1 ora</p>
-                        <p><span class="text-small">vicino al buco nero</span></p>
-                    </div>
-                </div>
-                <div class="risultati-tempo">
-                    <div class="risultati-tempo-blocco">
-                        <p><span id="anni" class="grassetto"></span> anni</p> 
-                        <p><span id="giorni" class="grassetto"></span> giorni</p>
-                        <p><span id="ore" class="grassetto"></span> ore</p>
-                        <p><span id="minuti" class="grassetto"></span> minuti</p>
-                        <p><span id="secondi" class="grassetto"></span> secondi</p>    
-                    </div>                    
-                </div>
-            </div>
-            -->
+            <h2>Confronto dimensioni</h2>
+            <p class="spiegazione">Ogni cerchio è in proporzione reale con gli altri: guarda quanto il Sole è più
+                grande di tutto il resto del sistema solare messo insieme.</p>
+            <div class="confronto-diametri" id="confronto-diametri"></div>
         </div>
     </main>
     <footer>

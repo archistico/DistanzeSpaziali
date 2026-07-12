@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 /* ::: RESET ::: */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -63,10 +63,6 @@ header h1 {
     color: darkgray;
 }
 
-.grassetto {
-    font-weight: 900;
-}
-
 .spazio-paragrafo {
     padding-top: 10px;
 }
@@ -76,56 +72,11 @@ header h1 {
     margin-bottom: 20px;
 }
 
-.risultati {
-    padding-top: 5px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.risultati-unita {
-    background-color: black;
-    color: white;
-    flex: 1;
-    align-self: stretch;
-    padding: 5px;
-    padding-left: 20px;
-    position: relative;
-}
-
-.risultati-unita div {
-    font-family: 'Montserrat';
-    font-weight: 900;
-    font-size: 1.5em;
-    text-transform: uppercase;
-
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-
-.risultati-tempo {
-    border: 1px solid black;
-    color: black;
-    flex: 1;
-    align-self: stretch;
-    padding: 5px;
-    padding-left: 20px;
-}
-
-.risultati-tempo p {
-    font-family: 'Montserrat';
-    font-size: 1.5em;
-    text-transform: uppercase;
-}
-
 .text-small {
-    font-size: 0.5em;
+    font-size: 0.75em;
+    font-weight: 400;
+    text-transform: none;
+    font-style: italic;
 }
 
 /* ::: MAIN ::: */
@@ -192,6 +143,40 @@ th {
     font-weight: 600;
 }
 
+/* ::: CONFRONTO DIMENSIONI (cerchi in scala) ::: */
+
+.confronto-diametri {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 40px 10px 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.corpo-diametro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+}
+
+.cerchio {
+    background-color: black;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.corpo-diametro-label {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.75em;
+    line-height: 1.4;
+}
+
 /* ::: MEDIA QUERY ::: */
 
 @media only screen and (min-width: 320px) {
@@ -209,18 +194,6 @@ th {
     .container {
         width: 300px;
         margin: auto;
-    }
-
-    .risultati-tempo p {
-        font-size: 0.8em;
-    }
-
-    .risultati-unita div {
-        font-size: 0.8em;
-    }
-
-    .text-small {
-        font-size: 0.75em;
     }
 }
 
@@ -240,14 +213,6 @@ th {
         width: 500px;
         margin: auto;
     }
-
-    .risultati-tempo p {
-        font-size: 1.5em;
-    }
-
-    .risultati-unita div {
-        font-size: 1.5em;
-    }
 }
 
 @media only screen and (min-width: 960px) {
@@ -265,14 +230,6 @@ th {
     .container {
         width: 900px;
         margin: auto;
-    }
-
-    .risultati-tempo p {
-        font-size: 1.75em;
-    }
-
-    .risultati-unita div {
-        font-size: 1.75em;
     }
 }
 
