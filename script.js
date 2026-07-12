@@ -32,10 +32,10 @@ function metriToUnita(metri) {
     if(metri > 100000) {
         return numberWithSpaces(Math.round(metri/1000)) + " km"
     }
-    if(metri > 1000) {
+    if(metri >= 1000) {
         return Math.round(metri/1000*100)/100 + " km"
     }
-    
+
 }
 
 function calculate(diametroTerraNuovo) {
@@ -103,7 +103,7 @@ function calculate(diametroTerraNuovo) {
     const distanza_dal_sole_plutone = getDettagliCorpo(dimensioni_corpi_celesti,'plutone').distanza_dal_sole / divisore
     const distanza_dal_sole_eris = getDettagliCorpo(dimensioni_corpi_celesti,'eris').distanza_dal_sole / divisore
     const distanza_dal_sole_eliosfera = getDettagliCorpo(dimensioni_corpi_celesti,'eliosfera').distanza_dal_sole / divisore
-    const distanza_dal_sole_proxima_centauri = Number(BigInt(getDettagliCorpo(dimensioni_corpi_celesti,'proxima_centauri').distanza_dal_sole) / BigInt(divisore))
+    const distanza_dal_sole_proxima_centauri = Number(getDettagliCorpo(dimensioni_corpi_celesti,'proxima_centauri').distanza_dal_sole) / divisore
 
     const html_distanza_dal_sole_mercurio = (document.getElementById('distanza_mercurio')).innerHTML = metriToUnita(distanza_dal_sole_mercurio)
     const html_distanza_dal_sole_venere = (document.getElementById('distanza_venere')).innerHTML = metriToUnita(distanza_dal_sole_venere)
